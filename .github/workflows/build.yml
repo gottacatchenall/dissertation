@@ -32,7 +32,7 @@ jobs:
           tar -xf pandoc-crossref-Linux.tar.xz
       - name: Merge the chapters into a single md file
         run: |
-          pip install yaml
+          pip install PyYAML
           python .assets/scripts/merge_chapters.py
       - name: Convert the bib file to json
         run: |
