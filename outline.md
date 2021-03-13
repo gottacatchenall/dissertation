@@ -36,7 +36,7 @@ empirical data is still useful.
 ### Intro
 
 - Why do we need software to simulate metacommunity dynamics?
-- Why are dynamics fundamental to ecology? The encode mechanism
+- Why are dynamics fundamental to ecology? They encode mechanism
 - Here we provide examples in how this software can be used to
 understand species interaction across space and time
 
