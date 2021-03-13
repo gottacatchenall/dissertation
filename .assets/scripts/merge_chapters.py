@@ -17,6 +17,8 @@ def get_yaml(f):
   return ''.join(readline)
 
 
+
+
 with open("manuscript.md", "a") as outfile:
     for cf in chapterFiles:
         with open(cf, "r") as f:

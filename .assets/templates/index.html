@@ -8,6 +8,8 @@
     <script src="https://hypothes.is/embed.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet"> 
     <style>
         ${ style.css() }
     </style>
@@ -53,7 +55,7 @@
             </div>
         </div>
     </header>
-    
+
     <main class="container">
         <section class="abstract">
             <b>Abstract:</b> ${ description }<br />
@@ -62,7 +64,7 @@
                 <a href="preprint.pdf" title="Preprint PDF" target="_blank">preprint</a>
             </div>
         </section>
-        
+
         <article>
             ${ body }
         </article>
@@ -70,12 +72,12 @@
 
     <footer>
         <div class="container">
-            <h2>Affiliations</h2> 
+            <h2>Affiliations</h2>
             ${ institutions:_list_institutions()[; ] }
             <br />
             ${ metadata.equalcontributions:_list_institutions()[; ] }
         </div>
     </footer>
-    
+
 </body>
 </html>
