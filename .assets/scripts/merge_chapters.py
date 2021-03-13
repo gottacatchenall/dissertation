@@ -18,7 +18,7 @@ def get_yaml(f):
 
 
 
-string_values = ["One", "Two", "Three", "Four", "Five"]
+string_values = ["Zero", "One", "Two", "Three", "Four", "Five"]
 
 with open("manuscript.md", "a") as outfile:
     for cf in chapterFiles:
@@ -26,7 +26,7 @@ with open("manuscript.md", "a") as outfile:
               config = list(yaml.load_all(get_yaml(f), Loader=yaml.SafeLoader))
               chTitle = config[0]["title"]
               chNum = int("".join(cf.split("/")[2]).split(".md")[0])    # python is a beautiful language
-              header = ("# Chapter %s" % string_values[chNum])  + (chTitle)
+              header = ("# Chapter %s: " % string_values[chNum])  + (chTitle)
               text = f.read()
 
               this_chapter = header + "\n" + text + "\n\n"
