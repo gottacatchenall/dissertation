@@ -31,7 +31,9 @@ jobs:
           wget https://github.com/lierdakil/pandoc-crossref/releases/download/v${{ matrix.crossref-version }}/pandoc-crossref-Linux.tar.xz
           tar -xf pandoc-crossref-Linux.tar.xz
       - name: Merge the chapters into a single md file
-        run: echo
+        run: |
+          pip install PyYAML
+          python .assets/scripts/merge_chapters.py
       - name: Convert the bib file to json
         run: |
           export LANG=en_US.UTF-8
@@ -45,6 +47,7 @@ jobs:
           mkdir -p dist
           cp -r figures dist/
           cp references.json dist/
+          cp manuscript.md dist/
           cp author_template.tsv dist/
       - name: Build the website
         run: pandoc manuscript.md -o dist/index.html -F pandoc-crossref --citeproc --bibliography=references.json --metadata-file=metadata.json --metadata-file=affiliations.json --template=.assets/templates/index.html
