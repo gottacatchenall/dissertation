@@ -24,7 +24,7 @@ Summary of the motivation for what I do here.
 - Data we collect is information produced by a combination of "true" mechanisms + noise.
 - What is an ecological mechanism? A mapping between low dimensional latent/parameter space and information space.
 - If a simulation makes data the looks like real data, does it represent the "true" world?
-- Does it matter? Newtonian Gravity was "right", until GR was more right.
+- Does it matter? Newtonian Gravity was "right", until GR was more right. There is an epistemic gap that means we can never be certain what the "true" mechanisms are. 
 - Mechanisms that are incorrect that produce information that shates statistical properties with
 empirical data is still useful.
 - Feynman on Models
