@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dissertation</title>
+    <script src="https://hypothes.is/embed.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+        :root {
+            --citation: #1976D2;
+            --structure: hsl(210, 61%, 43%);
+
+            --light: #474747;
+            --pale: #a5a5a5;
+            --grey: #e0e0e0;
+            --nav: #fdfdfd;
+
+            --width: 820px;
+            --inner-space: 1.2em;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 0 0;
+            padding: 0 0;
+        }
+
+        article > p {
+            line-height: 135%;
+        }
+        article > h1 {
+            padding-top: 3em;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+            border-bottom: 1px solid var(--structure);
+        }
+        a:hover {
+            font-weight: 500;
+        }
+        .citation {
+            color: var(--citation);
+        }
+        .container {
+            margin: 0em 75px;
+            max-width: var(--width);
+            padding: var(--inner-space);
+        }
+        header > .container {
+            margin-top: 4em;
+        }
+        code, pre {
+            font-family: "Roboto Mono", monospace;
+        }
+        pre {
+            white-space: pre-wrap;
+        }
+        h1, h2, h3 {
+            color: var(--structure);
+            font-family: "EB Garamond", sans-serif;
+            font-weight: 500;
+        }
+        header {
+            font-family: "EB Garamond", sans-serif;
+            z-index: 5;
+            color: black;
+            margin-top: 4rem;
+        }
+        .header--title {
+            font-weight: 500;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .header--authors > span {
+            color: var(--light);
+            font-weight: 400;
+        }
+        main {
+            padding-bottom: 8em !important;
+        }
+        footer {
+            background-color: var(--grey);
+            font-weight: 300;
+        }
+        .abstract {
+            color: var(--light);
+            margin-bottom: 5em;
+        }
+        figure {
+            max-width: 100%;
+            border: 1px solid var(--pale);
+            border-radius: 2px;
+            margin: 1em 0.5em;
+        }
+        figure > img {
+            max-width: 100%;
+            display: block;
+            margin: 0em auto;
+        }
+        figure > figcaption {
+            padding: var(--inner-space);
+        }
+        table {
+            width: 100%;
+            min-width: 100%;
+            border-collapse: collapse;
+        }
+        table > caption {
+            padding: var(--inner-space);
+        }
+        figcaption, caption {
+            color: var(--light);
+            font-weight: 300;
+        }
+        thead {
+            color: var(--structure);
+        }
+        td, th {
+            padding: 3px;
+        }
+        tr {
+            border-top: 1px solid var(--structure);
+            border-bottom: 1px solid var(--structure);
+        }
+        tbody > tr:nth-child(even) {background: var(--grey)};
+        tbody {
+            border-bottom: 1px solid var(--structure);
+        }
+        #refs {
+            font-size: 90%;
+            column-count: 2;
+        }
+        #refs > .csl-entry {
+            padding-bottom: 0.2em;
+            padding-top: 0.2em;
+        }
+        .hanging-indent > .csl-entry {
+            padding-left: 15px ;
+            text-indent: -15px ;
+        }    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
+    integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"
+    integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O"
+    crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF"
+    crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false }
+                ]
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header--title">Dissertation</div>
+            <div class="header--authors">
+                                <span class="header--author">
+                                        <a href="https://orcid.org/0000-0002-6506-6487" target="_blank">
+                        Michael D. Catchen
+                    </a>
+                                                                <sup class="affilcode">1</sup>
+                                            <sup class="affilcode">2</sup>
+                                    </span>
+                            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="abstract">
+            <i>Abstract</i> <br/><br/> my dissertation, eventually <br/>
+            <!-- <div class="artifacts">
+                <a href="draft.pdf" title="Draft PDF" target="_blank">draft</a>
+                <a href="preprint.pdf" title="Preprint PDF" target="_blank">preprint</a>
+            </div> -->
+        </section>
+
+        <article>
+            <h1 id="chapter-one-simulation-models-for-determining-ecological-mechanisms">Chapter One: Simulation models for determining ecological mechanisms</h1>
+            <h2 id="why-is-understanding-metacommunities-important-to-ecology-and-evolution">Why is understanding metacommunities important to ecology and evolution?</h2>
+            <ul>
+            <li>the scale at which (many) evolutionary and ecological processes intersect</li>
+            <li>landscapes scales up to ranges <span class="citation" data-cites="Leibold2003MetCom">(<strong>Leibold2003MetCom?</strong>)</span></li>
+            <li>applied angle. landscape and climate change is causing rapid changes to the structure of Earth’s landscapes and biodiversity</li>
+            <li>Can we understand? -&gt; Can we predict? -&gt; Can we forecast/manage?</li>
+            <li>Ecology is as much a study of emergent properties across scales as it is anything to do with biology.</li>
+            <li>The data we collect from these systems is inherently noisy.</li>
+            <li>Data we collect is information produced by a combination of “true” mechanisms (interacting in unknown ways) + noise.</li>
+            </ul>
+            <p>Why are dynamics fundamental to ecology? They encode mechanism</p>
+            <h2 id="what-methods-have-been-used-to-understand-metacommunities">What methods have been used to understand metacommunities?</h2>
+            <h2 id="how-can-mechanistic-models-supplement-this">How can mechanistic models supplement this?</h2>
+            <h2 id="why-should-we-use-mechanistic-models-in-ecology">Why should we use mechanistic models in ecology?</h2>
+            <p>What is an ecological mechanism? A mapping between low dimensional latent/parameter space and information space.</p>
+            <p>Science is fundamentally a theory of epistemology: a methodology and set of principles to make justified claims about the world. Descriptive claims about the world (the Earth goes around the sun, more species are found near the equator than far from it) are considered justified if they make predictions that agree with observed reality. In order to determine if a descriptive claim agrees with reality, it must be translated into a quantitative model that makes predictions about things that can be measured. These quantitative models take many forms. A subclass of these models, mechanistic models, represent latent processes that can not be observed or measured, either inherently or due to technological limitations.</p>
+            <p>If one abandons the notion that a model represents some “truth” about the the world, vs. for predictive accuracy. The problem is you cannot tell the difference — the induction problem.</p>
+            <p>Yet there are limits to the scope of simulation models. How do we know when they are appropriate, versus a ML/non-mechanistic model?</p>
+            <ul>
+            <li>If a simulation makes data the looks like real data, does it represent the “true” world?</li>
+            <li>Does it matter? Newtonian Gravity was “right,” until GR was more right.</li>
+            <li>Mechanisms that are incorrect that produce information that shates statistical properties with empirical data is still useful.</li>
+            <li>Feynman on Models</li>
+            </ul>
+            <h1 id="chapter-two-metacommunitydynamics.jl">Chapter Two: MetacommunityDynamics.jl</h1>
+            <h2 id="introduction">Introduction</h2>
+            <h3 id="why-do-we-need-software-to-simulate-metacommunity-dynamics">Why do we need software to simulate metacommunity dynamics?</h3>
+            <p>Here we provide examples in how this software can be used to understand species interaction across space and time based around four mechanisms in <span class="citation" data-cites="Vellend2010ConSyn">(<strong>Vellend2010ConSyn?</strong>)</span>.</p>
+            <h3 id="what-can-you-do-with-this">What can you do with this?</h3>
+            <ul>
+            <li>Generate sample of metacommunity trajectories based on mechanistic hypotheses.</li>
+            </ul>
+            <h2 id="software-and-model-description">Software and Model Description</h2>
+            <p>Written in Julia, interfaces with data structures in EcoJulia. Virtual laboratory <span class="citation" data-cites="Grimm2005IndBas">(<strong>Grimm2005IndBas?</strong>)</span>.</p>
+            <ul>
+            <li><code>Landscape</code>: a set of locations in space with corresponding environment data.</li>
+            <li><code>Metaweb</code>: a set of species which form a species pool, plus an interaction network.</li>
+            <li>An <code>AbstractDynamics</code> model is composed of <code>AbstractDispersalModel</code> + <code>AbstractSelectionModel</code> + <code>AbstractDriftModel</code>.</li>
+            <li>Running <code>simulate(dynamicsmodel)</code> where <code>dynamicsmodel</code> is of the type <code>AbstractDynamics</code> simulates a <code>MetacommunityTrajectory{MT}</code> (where <code>MT</code> is a <code>MeasurementType</code>; at the moment: <code>Occupancy</code>, <code>Abundance</code>, or <code>Trait</code>)</li>
+            <li>Simulates <code>Observer</code>s with given <code>ObserverError</code>.</li>
+            </ul>
+            <h2 id="case-studies">Case Studies</h2>
+            <h3 id="food-web-sar-and-rank-abundance">Food web SAR and rank abundance</h3>
+            <p>This case study simulates a food web according to the following dynamics models: Lotka-Voltera, MacArthur Consumer-Resource, Allometric MacArthur CR. The trajectories are sampled to generated expected 1) species area relationship and 2) rank-abundance curves for each model.</p>
+            <h3 id="plant-pollinator-nestedness">Plant-pollinator nestedness</h3>
+            <p>This case study simulates a metaweb of plants and pollinators across space. We simulate an expected amount of nestedness in the interaction network using various models of the dynamics of trait evolution</p>
+            <h1 id="chapter-three-the-forecasting-horizon-of-ecological-systems">Chapter Three: The forecasting horizon of ecological systems</h1>
+            <p>How far into the future can we foresast the behavior of ecological communities, given a certain accuracy of both the true dynamics and data.</p>
+            <p>Expected accuracy as a function of 1) data amount and 2) measurement error.</p>
+            <h1 id="chapter-four-optimizing-corridor-placement-in-an-uncertain-world">Chapter Four: Optimizing corridor placement in an uncertain world</h1>
+            <p>Given a constraint, what corridor in a landscape enables ecosystem functioning? What is defined by a target state, and how do you define an optimization algorithm to decide what the best decision under the constraint is.</p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>Affiliations</h2>
+            <sup>1</sup>&nbsp;McGill University; <sup>2</sup>&nbsp;Québec Centre for Biodiversity Sciences
+            <br />
+            
+        </div>
+    </footer>
+
+</body>
+</html>
